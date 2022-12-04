@@ -39,7 +39,11 @@ const AutoSuggestion = ({
           <div className="flex flex-col">
             {showBlock.includes("suggestion") && (
               <div className={`order-${order[0]}`}>
-                <Suggestion data={suggestion} onSellect={onSellect} />
+                <Suggestion
+                  data={suggestion}
+                  onSellect={onSellect}
+                  searchText={searchText}
+                />
               </div>
             )}
             {showBlock.includes("collection") && (
